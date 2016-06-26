@@ -1,0 +1,6 @@
+All images for the Picture page are in the img/ directory and they are loaded in order.
+So simply modify the images in the img directory to add/remove and reorder the images.
+
+Videos are very similar in that they are loaded from the video/ directory. The video images
+must be named the number of the video they need to link to. For example:
+To link to the video https://vimeo.com/120317561 create a image named 120317561.png

@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<link rel="stylesheet" href="css/foundation.css" />
+	<title>Blake Hutchinson{% block title %}{% endblock %}</title>
+	<script src="js/vendor/modernizr.js"></script>
+	<link rel="stylesheet" href="css/base.css">
+	<link rel="stylesheet" href="css/main.css">
+	<!--[if lt IE 9]><script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script><![endif]-->
+</head>
+<body>
+	<script src="http://code.jquery.com/jquery-1.7.2.min.js"></script>
+	<div class="wrapper">
+		<div class="header">
+
+			<div class="nav nav_one">
+				<a href="home" class="navitem">HOME</a>
+				<a href="videos" class="navitem">VIDEOS</a>
+			</div>
+			<div class="nav" style="text-align: center">
+			  BLAKE HUTCHINSON<br />
+			  CINEMATOGRAPHER
+			</div>
+			<div class="nav nav_two">
+				<a href="pictures" class="navitem rightalign">PICTURES</a>
+				<a href="contact" class="navitem rightalign">CONTACT</a>
+			</div>
+		</div>
+        {% block content %}{% endblock %}
+	</div>
+	{% block footer %}
+		<script src="js/vendor/jquery.js"></script>
+		<script src="js/foundation.min.js"></script>
+		<script src="js/foundation/foundation.clearing.js"></script>
+	{% endblock %}
+	
+	<div class="row">
+	   <br />
+	   <div class="small-12 columns rightalign">
+	       <a href="mailto:blakeihutchinson@gmail.com"><img src="email.gif" alt="email" />
+	       <a href="https://instagram.com/blakeihutch/ " target="_blank"><img src="instagram.gif" alt="instagram" /></a>
+	       <a href="https://twitter.com/blakeihutch" target="_blank"><img src="twitter.gif" alt="twitter" /></a>
+	       <a href="https://vimeo.com/user4174787" target="_blank"><img src="vimeo.gif" alt="vimeo" /></a>
+	   </div>
+	</div>
+	<div class="row">
+	   <div class="small-12 columns rightalign">
+	       blakeihutchinson@gmail.com | 905 691 5560
+	   </div>
+	</div>
+</body>
+</html>

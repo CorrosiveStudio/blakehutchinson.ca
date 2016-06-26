@@ -1,0 +1,23 @@
+{% extends "layout.twig" %}
+
+{% block title %} - Videos{% endblock %}
+
+{% block content %}
+<div class="row text-center">
+	<ul class="clearing-thumbs small-block-grid-3" data-clearing>
+        {% for image in images %}
+		<li><a href="img/{{ image.getfilename }}">
+			<img src="img/{{ image.getfilename }}" width="280" />
+		</a></li>
+        {% endfor %}
+	</ul>
+</div>
+{% endblock %}
+
+{% block footer %}
+    {{ parent() }}
+	<script>
+		$(document).foundation();
+	</script>
+{% endblock %}
+
